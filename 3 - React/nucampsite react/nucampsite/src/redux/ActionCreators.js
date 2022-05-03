@@ -1,7 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 import { CAMPSITES } from '../shared/campsites';
 
-
 export const addComment = (campsiteId, rating, author, text) => ({
     type: ActionTypes.ADD_COMMENT,
     payload: {
@@ -9,8 +8,9 @@ export const addComment = (campsiteId, rating, author, text) => ({
         rating: rating,
         author: author,
         text: text
+
     }
-});
+})
 
 export const fetchCampsites = () => dispatch => {
 
